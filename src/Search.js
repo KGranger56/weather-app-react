@@ -52,10 +52,7 @@ export default function Search() {
         <div className="CurrentWeather">
           <div className="block-3">
             <div className="box-1">
-              <h1 id="city">
-                <regular>Currently in </regular>
-                {city}
-              </h1>
+              <h1 id="city">Currently in {city}</h1>
             </div>
             <div className="box-2" id="current-description">
               {weather.description}

@@ -13,7 +13,7 @@ function App() {
 
       <div className="block-3">
         <div className="box-1">
-          <h1 id="city" />
+          <h1 id="city">Work</h1>
         </div>
         <div className="box-2" id="current-description">
           Clear Sky

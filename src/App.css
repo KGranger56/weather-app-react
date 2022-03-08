@@ -45,42 +45,6 @@
   flex-direction: column;
 }
 
-#current-description:first-letter {
-  text-transform: capitalize;
-}
-
-#current-temp {
-  font-size: 64px;
-  line-height: 1;
-  font-weight: 400;
-}
-
-#fahrenheit-link {
-  position: relative;
-  top: -14px;
-  color: #202124;
-  text-decoration: none;
-}
-
-.github {
-  max-width: 600px;
-  text-align: center;
-  display: block;
-  margin: 0% auto;
-}
-
-.github-link {
-  text-decoration: none;
-  font-size: 16px;
-  color: black;
-  text-align: center;
-  transition: all 200ms ease-in-out;
-}
-
-.github-link:hover {
-  color: purple;
-}
-
 ul {
   list-style-type: none;
   margin: 0;

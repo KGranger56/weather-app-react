@@ -37,12 +37,13 @@
   line-height: 26px;
 }
 
-.container {
+#root {
   display: flex;
   max-width: 600px;
   border: 1px solid #dadde1;
   border-radius: 5px;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 ul {

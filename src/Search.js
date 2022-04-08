@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
 import "./Search.css";
+/*import { propTypes } from "react-bootstrap/esm/Image";*/
+import FormattedDate from "./FormattedDate";
 
 export default function Search() {
   let [city, searchedCity] = useState("");
@@ -16,6 +18,9 @@ export default function Search() {
     function handleUrl(response) {
       console.log(response);
       setWeather({
+        city: response.data.name,
+        coordinates: response.data.coord,
+        date: new Date(response.data.dt * 1000),
         description: response.data.weather.main,
         temperature: response.data.main.temp,
         maxTemp: response.data.main.temp_max,
@@ -52,10 +57,16 @@ export default function Search() {
         <div className="CurrentWeather">
           <div className="block-3">
             <div className="box-1">
-              <h1 id="city">
-                <regular>Currently in </regular>
-                {city}
-              </h1>
+              <ul>
+                <li>
+                  <h1 id="city">Currently in {city}</h1>
+                </li>
+                <li>
+                  <h5 className="current-date">
+                    <FormattedDate date={weather.date} />
+                  </h5>
+                </li>
+              </ul>
             </div>
             <div className="box-2" id="current-description">
               {weather.description}
@@ -69,7 +80,9 @@ export default function Search() {
             <div className="box-2">
               <div className="active">
                 <strong id="current-temp">{Math.round(weather.temperature)}</strong>
-                <span id="fahrenheit-link">°F</span>
+                <span id="fahrenheit-link">
+                  <strong>°F</strong> | °C
+                </span>
               </div>
             </div>
             <div className="box-3">

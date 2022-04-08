@@ -2,6 +2,14 @@ form {
   text-align: center;
 }
 
+.current-date {
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  color: var(--bs-body-color);
+  text-align: left;
+}
+
 #current-temp {
   font-size: 64px;
   line-height: 1;

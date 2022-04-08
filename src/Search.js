@@ -4,6 +4,7 @@ import "./App.css";
 import "./Search.css";
 /*import { propTypes } from "react-bootstrap/esm/Image";*/
 import FormattedDate from "./FormattedDate";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function Search() {
   let [city, searchedCity] = useState("");
@@ -78,12 +79,7 @@ export default function Search() {
               <img src={weather.emoji} alt={weather.description} id="current-emoji" />
             </div>
             <div className="box-2">
-              <div className="active">
-                <strong id="current-temp">{Math.round(weather.temperature)}</strong>
-                <span id="fahrenheit-link">
-                  <strong>°F</strong> | °C
-                </span>
-              </div>
+              <WeatherTemperature temperature={weather.temperature} />
             </div>
             <div className="box-3">
               <ul>

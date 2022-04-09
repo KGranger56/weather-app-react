@@ -15,10 +15,3 @@ form {
   line-height: 1;
   font-weight: 400;
 }
-
-#fahrenheit-link {
-  position: relative;
-  top: -34px;
-  color: #202124;
-  text-decoration: none;
-}

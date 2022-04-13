@@ -3,16 +3,21 @@
   text-align: center;
   display: block;
   margin: 0% auto;
+  font-size: 11px;
 }
 
-#github-link {
+#github-link,
+.kelly-link,
+.netlify-link {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 11px;
   color: black;
   text-align: center;
   transition: all 200ms ease-in-out;
 }
 
-.github-link:hover {
+#github-link:hover,
+.kelly-link-link:hover,
+.netlify-link-link:hover {
   color: purple;
 }

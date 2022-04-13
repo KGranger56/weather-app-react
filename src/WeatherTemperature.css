@@ -2,5 +2,9 @@ span.unit {
   position: relative;
   top: -34px;
   color: #202124;
-  text-decoration: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: #202124;
 }

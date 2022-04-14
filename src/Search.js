@@ -5,24 +5,30 @@ import "./Search.css";
 /*import { propTypes } from "react-bootstrap/esm/Image";*/
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
+import ShowForecast from "./ShowForecast";
 
 export default function Search() {
   let [city, searchedCity] = useState("");
   let [weather, setWeather] = useState("");
   let [loaded, setLoaded] = useState(false);
 
+  let apiKey = "30e9dd107086e8cc692d0c7add1a109e";
+
   function handleSubmit(event) {
     event.preventDefault();
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=30e9dd107086e8cc692d0c7add1a109e&units=imperial`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
     axios.get(url).then(handleUrl);
 
     function handleUrl(response) {
-      console.log(response);
+      {
+        /*console.log(response);*/
+      }
       setWeather({
         city: response.data.name,
-        coordinates: response.data.coord,
         date: new Date(response.data.dt * 1000),
         description: response.data.weather.main,
+        latitude: response.data.coord.lat,
+        longitude: response.data.coord.lon,
         temperature: response.data.main.temp,
         maxTemp: response.data.main.temp_max,
         minTemp: response.data.main.temp_min,
@@ -95,6 +101,8 @@ export default function Search() {
             </div>
           </div>
         </div>
+        <br />
+        <ShowForecast lat={weather.latitude} lon={weather.longitude} />
       </div>
     );
   } else {

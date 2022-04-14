@@ -1,0 +1,17 @@
+.future-day {
+  font-size: 18px;
+}
+
+.temp-min,
+.temp-max {
+  font-size: 16px;
+}
+
+.temp-min {
+  opacity: 60%;
+}
+
+.WeatherForecast {
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}

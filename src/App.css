@@ -1,3 +1,9 @@
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0 !important;
+}
+
 #banner-image {
   border: 1px solid #fff;
   border-radius: 10px;
@@ -44,12 +50,8 @@
   border-radius: 5px;
   flex-direction: column;
   margin: 0 auto;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  font-size: 19px;
+  margin-bottom: 0 !important;
 }
 
 @media (max-width: 576px) {

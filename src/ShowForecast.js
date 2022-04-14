@@ -46,6 +46,6 @@ export default function ShowForecast(props) {
     let apiKey = "30e9dd107086e8cc692d0c7add1a109e";
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${props.lat}&lon=${props.lon}&units=imperial&appid=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
-    return null;
+    return " ";
   }
 }

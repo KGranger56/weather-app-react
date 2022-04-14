@@ -20,9 +20,6 @@ export default function Search() {
     axios.get(url).then(handleUrl);
 
     function handleUrl(response) {
-      {
-        /*console.log(response);*/
-      }
       setWeather({
         city: response.data.name,
         date: new Date(response.data.dt * 1000),

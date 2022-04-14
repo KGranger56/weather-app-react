@@ -15,8 +15,6 @@ function App() {
 
       <Search />
 
-      {/*Forecast*/}
-      <div id="forecast"></div>
       <br />
       <GitHub />
     </div>

@@ -23,6 +23,7 @@ ul {
   justify-content: center;
   align-items: center;
   flex: 100%;
+  justify-content: space-around;
 }
 
 .block-1.box-1 {

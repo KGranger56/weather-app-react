@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
 import "./Search.css";
-/*import { propTypes } from "react-bootstrap/esm/Image";*/
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
 import ShowForecast from "./ShowForecast";

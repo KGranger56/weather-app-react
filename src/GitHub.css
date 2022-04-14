@@ -10,14 +10,14 @@
 .kelly-link,
 .netlify-link {
   text-decoration: none;
-  font-size: 11px;
+  font-size: 12px;
   color: black;
   text-align: center;
   transition: all 200ms ease-in-out;
 }
 
 #github-link:hover,
-.kelly-link-link:hover,
-.netlify-link-link:hover {
+.kelly-link:hover,
+.netlify-link:hover {
   color: purple;
 }
